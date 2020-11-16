@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>List of Aniamls</h1>
+
+<div class="row">
+    {{#each ar}}
+        <div class="col-lg-6 border p-2">
+            <img height="140px" width="140px" style="object-fit: cover;" class="float-left w-25 mr-2" src="{{imageUrl}}" alt="{{title}}">
+            <h3>{{title}}</h3>
+            <p>Author: {{writtenBy}}</p>
+            <a href="/animals/single/{{id}}">More Info</a>
+        </div>
+    {{/each}}
+</div>
+
+</div>
+
